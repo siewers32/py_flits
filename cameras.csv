@@ -1,0 +1,31 @@
+id, address, city, max_speed, created_at, updated_at
+1, van der Bergweg 26-91, Nieuwland, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+2, Breugelensisbaan 8470, Ferwoude, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+3, Schenkweg 55, Egchel, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+4, van der Veenlaan 22-48, Spaarndam gem. Haarlem, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+5, Prinsring 5-a, Lochem, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+6, Gerritsenring 62y, Ane, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+7, Groenbaan 36-64, Kootwijk, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+8, van der Heydenbaan 8-3, Stroobos, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+9, Budboulevard 262, Buggenum, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+10, Mulderbaan 9u, Winsum, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+11, de Ruiterbaan 33-v, Oudega, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+12, Zhangstraat 9a, IJsselmuiden, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+13, Ehlertlaan 5267, Dodewaard, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+14, Hazenveldsteeg 6-c, Kesteren, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+15, Jansensingel 43-f, Sinderen, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+16, de Groteboulevard 7, Smakt, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+17, de Bruijnsteeg 2f, Hallum, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+18, Spruytsingel 58-o, Tuitjenhorn, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+19, Bökenkampbaan 2, Eemdijk, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+20, Bezemerbaan 67e, Eijsden, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+21, von Frijtag Drabbe Künzelring 7-c, Gasteren, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+22, van 't Rietbaan 63f, Dorst, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+23, Woltersbaan 7, Lollum, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+24, van Susadreef 9-v, Vinkega, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+25, Ottedreef 3184, Usquert, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+26, van der Slootboulevard 96-j, Gastel, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+27, Kurtsteeg 8-b, Huisduinen, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+28, Kettingboulevard 82t, Ubbena, 50, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+29, Güneşsingel 3815, Ledeacker, 100, 2022-10-30 20:25:44, 2022-10-30 20:25:44
+30, van Wijlandweg 60-s, Zuidwolde, 80, 2022-10-30 20:25:44, 2022-10-30 20:25:44
