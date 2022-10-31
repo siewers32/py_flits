@@ -5,7 +5,7 @@ def conn():
     return pymysql.connect(host='localhost',
                           user='root',
                           password='root',
-                          database='rdw',
+                          database='flits',
                           port=8889,
                           charset='utf8mb4',
                           cursorclass=pymysql.cursors.DictCursor)
