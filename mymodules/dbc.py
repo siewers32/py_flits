@@ -78,8 +78,11 @@ def csv_to_mysql(con, table, file):
                 fields = ', '.join([str(i) for i in row])
                 placeholders = ', '.join(['%s' for i in range(len(row))])
             else:
+                sanitized = []
+                for r in row:
+                    sanitized.append(r.strip())
                 sql = 'INSERT INTO ' + table + ' (' + fields + ')' + ' VALUES (' + placeholders + ')'
-                cursor.execute(sql, row)
+                cursor.execute(sql, sanitized)
         con.commit()
         print(f"Gegevens uit { file } zijn succesvol overgezet naar tabel { table }")
     except pymysql.Error as e:
