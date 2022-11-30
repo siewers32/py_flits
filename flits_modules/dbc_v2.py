@@ -1,11 +1,12 @@
 import pymysql
 import csv
+from tabulate import tabulate
 
 def conn():
     return pymysql.connect(host='localhost',
                           user='root',
                           password='root',
-                          database='rdw2',
+                          database='rdw3',
                           port=8889,
                           charset='utf8mb4',
                           cursorclass=pymysql.cursors.DictCursor)
@@ -94,13 +95,22 @@ def select_query(con, sql):
          with con.cursor() as cur:
             cur.execute(sql)
             con.commit()
-            for rows in cur:
-                for row in rows:
-                    print(rows[row], end="\t")
-                print("")
+            header = []
+            tabledata = []
+            for key, value in cur.fetchone().items():
+                header.append(key)
+            tabledata.append(header)
+            for row in cur.fetchall():
+                data = []
+                for key, value in row.items():
+                    data.append(value)
+                tabledata.append(data)
+            print(tabulate(tabledata, headers='firstrow'))
     except pymysql.Error as e:
         print("Error %d: %s" % (e.args[0], e.args[1]))
         return False
+    except:
+        print("select_query went wrong")
     finally:
         con.close()
 
