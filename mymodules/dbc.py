@@ -5,7 +5,11 @@ def conn():
     return pymysql.connect(host='localhost',
                           user='root',
                           password='root',
+<<<<<<< HEAD
                           database='rdw2',
+=======
+                          database='flits',
+>>>>>>> b293568e2aadf22a8e14c9aac760ace252b03881
                           port=8889,
                           charset='utf8mb4',
                           cursorclass=pymysql.cursors.DictCursor)
@@ -78,8 +82,11 @@ def csv_to_mysql(con, table, file):
                 fields = ', '.join([str(i) for i in row])
                 placeholders = ', '.join(['%s' for i in range(len(row))])
             else:
+                sanitized = []
+                for r in row:
+                    sanitized.append(r.strip())
                 sql = 'INSERT INTO ' + table + ' (' + fields + ')' + ' VALUES (' + placeholders + ')'
-                cursor.execute(sql, row)
+                cursor.execute(sql, sanitized)
         con.commit()
         print(f"Gegevens uit { file } zijn succesvol overgezet naar tabel { table }")
     except pymysql.Error as e:

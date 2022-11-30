@@ -1,10 +1,5 @@
-from mymodules import dbc
-con = dbc.conn()
-keuze = 10
-tables = ['cameras', 'licenses', 'flashes', 'fines']
-
 ##### Uitleg tabellen #####
-# camera's = flitscamera's met hun locatie
+# cameras = flitscamera's met hun locatie
 # licenses = kentekens van autos en hun gegevens van de eigenaar
 # flashes = registratie van kentekens van auto's die te hard hebben en de flitspaal die ze heeft geflitst
 # fines = overzicht van de boetes (bedrag) bij een overtreding.
@@ -16,17 +11,23 @@ tables = ['cameras', 'licenses', 'flashes', 'fines']
 # 4. Zorg ervoor dat het keuzescherm wordt getoond op het scherm
 # 5. Maak de code die er voor zorgt dat een keuze wordt uitgevoerd.
 
+from flits_modules import dbc
+
+# Maak connectie met de database
+con = dbc.conn()
+tables = ['cameras', 'licenses', 'flashes', 'fines']
+keuze = 0
 
 ##### Hier komt de code om een keuzescherm weer te geven #####
-
-# print("Maak een keuze: ") etc....
 
 
 ##### Hier komt de code om user-input te verwerken #####
 
-# keuze = ....
+keuze = 9
 
 try:
+    if keuze < 0 or keuze > 8:
+        raise Exception()
 
     if keuze == 0:
         # Met keuze 0 worden de tabellen in de database leeggemaakt
@@ -41,7 +42,7 @@ try:
 
     #### Opdracht 7  #####
     # Geef een overzicht van de boetes op 50-kilometer wegen")
-        # if keuze == 2:
+    if keuze == 2:
         query = ""
         dbc.select_query(con, query)
 
@@ -58,7 +59,8 @@ try:
     # Zorg ervoor dat de gebruiker een kenteken op kan geven
     # Het gegeven kenteken wordt gebruikt om op te zoeken
     if keuze == 4:
-        kenteken = ""
+        kenteken = 0
+        # == code om kenteken op te vragen == #
         try:
             query = "select l.first_name, l.last_name, l.address, l.postal_code, l.city, l.license, max_speed, speed, fi.fine from licenses l " \
                     "join flashes f on l.license = f.license " \
@@ -86,6 +88,7 @@ try:
     if keuze == 7:
         query = ""
         dbc.select_query(con, query)
+    # Top 10 van kentekens met het hoogste bedrag aan boetes en het aantal keer dat ze geflitst zijn.
 
     if keuze == 8:
         query = "select l.license,  count(l.license) as aantal_keer_geflitst, " \
@@ -97,4 +100,4 @@ try:
         dbc.select_query(con, query)
 
 except:
-    print("Voer een nummer in tussen 1 en 8")
+    print("Voer een nummer in tussen 0 en 8")

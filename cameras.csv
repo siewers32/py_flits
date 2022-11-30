@@ -29,3 +29,25 @@ id, address, city, max_speed, created_at, updated_at
 28, Winnrichpad 3, Joppe, 80, 2022-11-11 11:31:20, 2022-11-11 11:31:20
 29, van den Veldenweg 72n, Echtenerbrug, 80, 2022-11-11 11:31:20, 2022-11-11 11:31:20
 30, Bleijenbergweg 8056, Lisse, 80, 2022-11-11 11:31:20, 2022-11-11 11:31:20
+=======
+1, Vroeg in de Weihof 5, Santpoort-Zuid, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+2, de Keijzerboulevard 93-l, Oldelamer, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+3, Bleesring 650, Badhoevedorp, 80, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+4, Huismanlaan 3-5, Haaksbergen, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+5, van Loonbaan 2, Appeltern, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+6, Hofmanhof 1173, Smilde, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+7, van der Walsingel 3483, Heesselt, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+8, Jansenweg 6, Langeweg, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+9, Dijkstrahof 2-2, Sprundel, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+10, Moussaouipad 17q, Ommeren, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+11, Mohammadboulevard 94-26, Wemeldinge, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+12, Courtiersteeg 1772, Erichem, 80, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+13, Mangalhof 954, Leons, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+14, van Bol'es Rijnbendebaan 8m, Baaium, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+15, Kanhairing 76, Joure, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+16, van der Nootsingel 9463, Oirlo, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+17, Alisingel 4, Griendtsveen, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+18, Aaltsring 7-i, Numansdorp, 80, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+19, van Vlietring 95, Tirns, 100, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+20, van de Veenhof 2-r, Tirns, 50, 2022-11-01 12:41:10, 2022-11-01 12:41:10
+
